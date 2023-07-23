@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EPC portfolio site">
     <title>EPC PORTFOLIO</title>
+
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="icon" type="image/x-icon" href="Activity-Images-2023-main/Activity-Images-2023-main/mainprofile.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
@@ -11,45 +21,98 @@
     <script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-        <!-- Header -->
-        <header>
-            <div class="header">
-                <nav class="header__nav">
-                    <a href="#" class="header__brand">PORT<span class="header__brand--span">FOLIO</span></a>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header__heading">
-                    <h1 class="header__heading--h1">Edmer Cañon</h1>
-                    <h2>Freelance Front-end Web Developer</h2>
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <nav class="fixed-top header__nav navbar navbar-expand-lg bg-dark navbar-dark"
+                style="background-color:rgba(36, 35, 35, 0.376) !important;">
+                <div class="container-fluid">
+                    <a href="#" class="header__brand navbar-brand">PORT<span
+                            class="header__brand--span">FOLIO</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="#header">Home</a></li>
+                            <li class="nav-item"><a href="#about-section">About</a></li>
+                            <li class="nav-item"><a href="#portfolio" rel="noopener">Portfolio</a></li>
+                            <li class="nav-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </nav>
 
-        <!-- About -->
-        <section>
-            <div class="about">
-                    <h2 class="about__heading--h2">ABOUT ME</h2>
-                    <p  class="about__heading--p">
-                    Hello there! I'm a passionate and dedicated individual who thrives on making people's lives better through excellent customer service and innovative web development. With a strong background in customer support and an unwavering enthusiasm for coding, I have found the perfect balance between empathy and technology.
-                    
-                    Beyond my passion for customer service, I have developed a deep fascination with web development and aspire to become a Full Stack Developer. My journey into coding began with self-taught HTML and CSS, where I quickly realized the power of turning design concepts into interactive websites. I continued my education by exploring JavaScript, Python, and various frameworks to enhance my skill set.
-                    </p>
+            <div class="header__image--sm">
+                <img src="Activity-Images-2023-main/Activity-Images-2023-main/profile2.jpg" alt="header image small"
+                    loading="lazy">
             </div>
-        </section>
-        <section>
-        <div class="portfolio">
-            <h2 class="portfolio__heading--h2">MY PORTFOLIO</h2>
+            <!-- Heading text for Desktop -->
+            <div class="header__heading--desktop">
+                <h1 class="header__heading--h1">Edmer Cañon</h1>
+                <h2 class="header__heading--h2">Freelance Front-end Web Developer</h2>
+            </div>
+
+            <!-- Heading text for Mobile -->
+            <div class="header__heading--mobile">
+                <h1 class="header__heading--h1-m">Web Developer</h1>
+                <h2 class="header__heading--h2">Hi, I am <span class="header__heading--span1">Edmer Cañon.</span></h2>
+                <h3 class="header__heading--span2">Let's Connect!</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about-section">
+        <div class="about">
+            <div class="about__img">
+                <img src="Activity-Images-2023-main/Activity-Images-2023-main/pexels-royal-anwar-6981883.jpg"
+                    alt="about mobile image" loading="lazy">
+            </div>
+            <div class="about__heading">
+                <h2 class="about__heading--h2">ABOUT ME</h2>
+                <p class="about__heading--p">
+                    Passionate and dedicated, I find joy in improving people's lives through exceptional customer
+                    service and innovative web development. My background in customer support complements my enthusiasm
+                    for coding, creating a perfect blend of empathy and technology. My journey started with self-taught
+                    HTML and CSS, and I quickly discovered the thrill of transforming design concepts into interactive
+                    websites. Eager to expand my knowledge, I delved into JavaScript, Python, and various frameworks.
+                    Aspiring to be a Full Stack Developer, I am driven by my deep fascination with web development.
+                </p>
+            </div>
+            <div class="about__skills">
+                <h3 class="about__skills-h3 about__skills-h3--1">Skills</h3>
+                <h3 class="about__skills-h3 about__skills-h3--2">Experience</h3>
+                <h3 class="about__skills-h3 about__skills-h3--3">Education</h3>
+            </div>
+            <div class="about__content">
+                <h3 class="about__content-h3">Javascript, HTML, & CSS</h3>
+                <p class="about__paragraph">Build responsive and user-friendly websites</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- Portfolio -->
+    <section>
+        <div id="portfolio">
+            <h1 class="portfolio__heading--h2">MY PORTFOLIO</h1>
             <div class="portfolio__container">
-                <div class="portfolio__img"><img src="Activity-Images-2023-main/Activity-Images-2023-main/pexels-dominika-roseclay-2023384.jpg" alt="image of a dog"></div>
-                <div class="portfolio__img"><img src="Activity-Images-2023-main/Activity-Images-2023-main/pexels-kat-smith-551628.jpg" alt="smiling dog"></div>
-                <div class="portfolio__img"><img src="Activity-Images-2023-main/Activity-Images-2023-main/pexels-fauxels-3184418.jpg" alt="team of people"></div>
-
+                <div class="portfolio__img"><img
+                        src="Activity-Images-2023-main/Activity-Images-2023-main/pexels-dominika-roseclay-2023384.jpg"
+                        alt="image of a dog">
+                </div>
+                <div class="portfolio__img"><img
+                        src="Activity-Images-2023-main/Activity-Images-2023-main/pexels-kat-smith-551628.jpg"
+                        alt="smiling dog">
+                </div>
+                <div class="portfolio__img"><img
+                        src="Activity-Images-2023-main/Activity-Images-2023-main/pexels-fauxels-3184418.jpg"
+                        alt="team of people">
+                </div>
             </div>
             <a href="#" class="portfolio__btn">See More</a>
         </div>
@@ -57,29 +120,30 @@
 
     <!-- Contact  -->
     <section>
-        <div class="contact">
+        <div id="contact">
             <div class="contact__container">
-              <div class="contact__row">
-                <div class="contact__row--left">
-                    <h2 class="contact__heading--h2">Contact Me</h2>
-                    <p><i class="fa-sharp fa-solid fa-envelope-circle-check"></i><a href="mailto: edmer.canon@test.com">edmer.canon@test.com</a></p>
-                    <p><i class="fa-sharp fa-solid fa-phone"></i><a href="tel: 09661597969" >09661597969</a></p>
-                    <div class="contact__left--icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <div class="contact__row">
+                    <div class="contact__row--left">
+                        <h2 class="contact__heading--h2">Contact Me</h2>
+                        <p><i class="fa-sharp fa-solid fa-envelope-circle-check"></i><a
+                                href="mailto: edmer.canon@test.com">edmer.canon@test.com</a></p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i><a href="tel: 09661597969">09661597969</a></p>
+                        <div class="contact__left--icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="downloads/sample.pdf" download class="contact__btn contact__btn--1">Download CV</a>
                     </div>
-                    <a href="downloads/sample.pdf" download class="contact__btn contact__btn--1">Download CV</a>
-                </div>
-                <div class="contact__row--right">
-                    <form action="#">
-                        <input type="text" placeholder="Your name">
-                        <input type="email" placeholder="Your email">
-                        <textarea name="#" id="#" cols="30" rows="10" placeholder="Your Message">
+                    <div class="contact__row--right">
+                        <form action="#">
+                            <input type="text" placeholder="Your name">
+                            <input type="email" placeholder="Your email">
+                            <textarea name="#" id="#" cols="30" rows="10" placeholder="Your Message">
                         </textarea>
-                        <button type="submit" class="contact__btn contact__btn--2">Submit</button>
-                    </form>
+                            <button type="submit" class="contact__btn contact__btn--2">Submit</button>
+                        </form>
+                    </div>
                 </div>
-              </div>
             </div>
         </div>
     </section>
@@ -87,5 +151,15 @@
     <footer>
         <p>Copyright 2023 &copy; Edmer Plantilla Cañon</p>
     </footer>
+
+    <!-- bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
